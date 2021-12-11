@@ -77,3 +77,21 @@ header{
     cursor: pointer;
     font-size: 26px;
 }
+
+.search-box{
+    position: relative;
+}
+
+.search-input{
+    border: 10px solid #dadada;
+    border-radius: 15px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding: 5px 10px;
+}
+
+.hide{
+    display: none;
+}

@@ -3,6 +3,8 @@ var listImage = ['./images/slide1.jpeg', './images/slide2.jpeg', './images/slide
 let prevBtn = document.querySelector('.control .prev')
 let nextBtn = document.querySelector('.control .next')
 let banner = document.querySelector('.banner')
+let btnSearch = document.querySelector('.search-box')
+let searchInput = document.querySelector('.search-input')
 
 let currentIndexBanner = 0
 
@@ -34,4 +36,14 @@ nextBtn.addEventListener('click', function(){
     setTimeout(function(){
         banner.classList.add('animation-fadeout')
     })
+})
+
+btnSearch.addEventListener('click', function(){
+    searchInput.classList.toggle('hide')
+})
+
+document.addEventListener('click', function(e){
+    if(e.target != btnSearch){
+        searchInput.classList.add('hide')
+    }
 })
